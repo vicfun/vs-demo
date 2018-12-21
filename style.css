@@ -144,7 +144,7 @@ body{
 .userCard footer{
     background-color: #E8676B;
 }
-.userCard svg{
+.userCard .media svg{
     width: 30px;
     height: 30px;
     fill:#fff; 
