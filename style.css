@@ -141,8 +141,14 @@ body{
     width: 70%;
     color: rgb(157, 160, 167);
 }
-.userCard footer{
+.userCard .media{
     background-color: #E8676B;
+    text-align: center;
+}
+.userCard .media a{
+    display: inline-block;
+    border: 1px solid #FFF;
+    border-radius: 50%;
 }
 .userCard .media svg{
     width: 30px;
