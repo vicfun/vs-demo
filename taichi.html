@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    @keyframes spin {   
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    #taichi{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #ffffff 0%,#fcfcfc 50%,#050505 50%,#000000 99%); 
+      position: relative;
+      animation-duration: 3s;                  /*让太极的旋转速度为3s*/
+      animation-name: spin;                   /*css动画 animation*/
+      animation-iteration-count: infinite;   /*让太极无数次旋转*/
+      animation-timing-function: linear;    /*让太极以线性速度旋转*/
+    }
+
+    #taichi::before{
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      border: 40px solid #000;
+    }
+
+    #taichi::after{
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background: #000;
+      width: 20px;
+      height: 20px;
+      border: 40px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id= "taichi"></div>
+</body>
+</html>
