@@ -19,6 +19,9 @@ body{
 ul,ol{
     list-style: none;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -216,6 +219,7 @@ section.skills ol{
     box-shadow: 
      0 1px 6px rgba(0, 0, 0, 0.12),
      0 1px 4px rgba(0, 0, 0, 0.24);
+     padding: 42px 50px 10px;
 }
 section.skills h3{
     font-size: 14px;
@@ -224,17 +228,19 @@ section.skills h3{
 }
 section.skills ol .progressBar{
     height: 5px;
-    border: 1px solid red;
-    width: 70%;
+    background-color: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
 }
 section.skills ol .progress{
     height: 100%;
-    background-color: grey;
+    background-color: #E8676B;
+    width: 70%;
+    border-radius: 2px;
 }
 section.skills ol > li{
     float: left;
     width: 50%;
-}
-section.skills ol > li > .wrap{
-    padding-left: 46px;
-}
+    box-sizing: border-box;
+    padding-right: 30px;
+} 
