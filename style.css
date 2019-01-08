@@ -201,12 +201,14 @@ main .downloadResume-wrapper{
     font-size: 18px;
     font-family: kaiti;
 }
-section.skills{
+section.skills,
+section.portfolio{
     max-width: 940px;
     margin: 0 auto;
     margin-top: 100px;
 }
-section.skills > h2{
+section.skills > h2,
+section.portfolio > h2{
     color: #3d4451;
     font-size: 34px;
     line-height: 1.2;
@@ -245,4 +247,35 @@ section.skills ol > li{
 } 
 section.skills ol > li:nth-child(even){
     float: right;
+}
+section.portfolio{
+    text-align: center;
+}
+section.portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio > nav > ol{
+    display: inline-block;
+    vertical-align: top;
+}
+section.portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+}
+section.portfolio > nav > ol > li:first-child{
+    margin-left: 0;
+}
+section.portfolio > nav .bar{
+    margin-top: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+section.portfolio > nav .bar-inner{
+    background-color: #E8676B;
+    width: 10%;
+    height: 100%;
+    border-radius: 5px;
 }
