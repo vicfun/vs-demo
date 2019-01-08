@@ -240,7 +240,9 @@ section.skills ol .progress{
 }
 section.skills ol > li{
     float: left;
-    width: 50%;
+    width: 48%;
     box-sizing: border-box;
-    padding-right: 30px;
 } 
+section.skills ol > li:nth-child(even){
+    float: right;
+}
