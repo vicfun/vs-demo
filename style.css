@@ -262,6 +262,7 @@ section.portfolio > nav > ol{
 section.portfolio > nav > ol > li{
     float: left;
     margin-left: 40px;
+    cursor: pointer;
 }
 section.portfolio > nav > ol > li:first-child{
     margin-left: 0;
@@ -278,4 +279,20 @@ section.portfolio > nav .bar-inner{
     width: 10%;
     height: 100%;
     border-radius: 5px;
+    transition: all 0.6s;
+}
+section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 35px;
+}
+section.portfolio > nav .bar.state-2 .bar-inner{
+    margin-left: 68px;
+    width: 42px;
+}
+section.portfolio > nav .bar.state-3 .bar-inner{
+    margin-left: 138px;
+    width: 102px;
+}
+.jobs > div{
+    float: left;
 }
