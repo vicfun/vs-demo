@@ -250,6 +250,7 @@ section.skills ol > li:nth-child(even){
 }
 section.portfolio{
     text-align: center;
+    margin-bottom: 100px;
 }
 section.portfolio > nav{
     display: inline-block;
@@ -272,7 +273,7 @@ section.portfolio > nav .bar{
     height: 5px;
     background-color: #fff;
     border-radius: 5px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 section.portfolio > nav .bar-inner{
     background-color: #E8676B;
@@ -293,6 +294,10 @@ section.portfolio > nav .bar.state-3 .bar-inner{
     margin-left: 138px;
     width: 102px;
 }
-.jobs > div{
-    float: left;
+section.portfolio .works{
+    position: relative;
+}
+section.portfolio .works > .big,
+section.portfolio .works > .small{
+    position: absolute;
 }
